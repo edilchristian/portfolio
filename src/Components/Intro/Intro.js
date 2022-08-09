@@ -6,6 +6,7 @@ import { Component } from 'react';
 
 import bim2 from "../../Assests/pinkblack.jpeg";
 
+/*
 const deviceType = () => {
     const ua = navigator.userAgent;
     if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
@@ -18,12 +19,12 @@ const deviceType = () => {
 
     return "desktop";
 };
-
+*/
 const browserType = () => {
 
     var ua = navigator.userAgent.toLowerCase(); 
     
-    if (ua.indexOf('safari') != -1) { 
+    if (ua.indexOf('safari') !== -1) { 
         if (ua.indexOf('chrome') > -1) 
         {
             return "chrome" // Chrome
@@ -41,13 +42,10 @@ var iOS = !!ua.match(/iPad/i) || !!ua.match(/iPhone/i);
 var webkit = !!ua.match(/WebKit/i);
 var iOSSafari = iOS && webkit && !ua.match(/CriOS/i);
 
-function randomIntFromInterval(min, max) { // min and max included 
-    return Math.floor(Math.random() * (max - min + 1) + min)
-}
 
 function returnMargin(){
 
-    if (iOSSafari && browserType() != "chrome") {
+    if (iOSSafari && browserType() !== "chrome") {
         return "4.5rem";
     }
 
@@ -70,12 +68,12 @@ class Intro extends Component{
             <section className="showcase" style={{marginBottom: this.state.marginb}}>
                 <Nav/>
             
-                <img src={bim2}/> 
+                <img src={bim2} alt="back imge"/> 
                
                 <div class="overlay"></div>
 
                 <div class="text">
-                    <h2><a href="https://syde.social/" target="_blank">Masters in Computer Science @ Rutgers University, New Brunswick (2021-2023)</a></h2>
+                    <h2><a href="https://syde.social/" target="_blank" rel="noreferrer">Masters in Computer Science @ Rutgers University, New Brunswick (2021-2023)</a></h2>
                     <h1>Edil Christian</h1>
                     <h3>
                         <div className="typing">
@@ -119,7 +117,7 @@ class Intro extends Component{
                 </div>
 
                 <div className="more-info" id="mi">
-                    <img src={arrow} />
+                    <img src={arrow} alt="arrow" />
                 </div> 
             </section>
         )

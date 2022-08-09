@@ -1,0 +1,79 @@
+body {
+    font-family: Algerian;
+    background-color: white;
+  }
+  
+.company-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+.company-title{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.job-desc {
+    color: #4D4D4D;
+    font-family: 'Noto';
+    margin-bottom: 20%;
+    
+}
+.job-desc-simul {
+    color: #4D4D4D;
+    font-family: 'Noto';
+    
+}
+
+.job-desc p{
+    margin: 10px;
+    text-align: center;
+}
+
+.job-desc li{
+    margin: 8px;
+}
+
+.i{
+    text-align: center;
+    margin: 20px;
+    color: #4D4D4D;
+}
+
+.company-title h1{
+    margin-bottom: 8px;
+    font-size: 35px;
+    color: #4D4D4D;
+}
+
+.company-title p{
+    margin: 5px;
+}
+
+.images{
+    margin: 50px;
+}
+
+.videos{
+    text-align: center;
+}
+
+.videoclass{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+@media  screen and (max-width:600px) {
+
+
+    .job-desc ul{
+        margin: 2rem 2rem 0rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+}
